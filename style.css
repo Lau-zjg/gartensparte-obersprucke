@@ -504,3 +504,66 @@ body {
 .plant-card h3 {
   color: #2f6b3f;
 }
+
+.plant-modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.plant-modal-content {
+  background: white;
+  width: 90%;
+  max-width: 1100px;
+  border-radius: 20px;
+  padding: 25px;
+  display: flex;
+  gap: 30px;
+  position: relative;
+}
+
+.plant-close {
+  position: absolute;
+  top: 15px;
+  right: 25px;
+  font-size: 40px;
+  cursor: pointer;
+}
+
+.plant-modal-left {
+  width: 45%;
+}
+
+.plant-main-image {
+  width: 100%;
+  border-radius: 15px;
+  height: 450px;
+  object-fit: cover;
+}
+
+.plant-thumbs {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.plant-thumbs img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.plant-modal-right {
+  flex: 1;
+}
+
+.latin-name {
+  font-style: italic;
+  color: #555;
+}

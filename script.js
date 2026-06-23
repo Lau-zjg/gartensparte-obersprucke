@@ -67,3 +67,11 @@ function openPlantModal() {
 function closePlantModal() {
   document.getElementById("plantModal").style.display = "none";
 }
+
+function openPlantModal() {
+  document.getElementById("plantModal").style.display = "flex";
+}
+
+function closePlantModal() {
+  document.getElementById("plantModal").style.display = "none";
+}

@@ -59,33 +59,38 @@
   <section class="plant-grid">
     <div class="plant-card" onclick="openPlantModal()">
       <img src="apfelbaum.jpg" alt="Apfelbaum">
-
-      <h3>🍎 Apfelbaum</h3>
-      <p>Sonne/Halbschatten · Ernte im Herbst</p>
+      <h3>Apfelbaum</h3>
+      <p>Sonne/Halbschatten • Ernte im Herbst</p>
     </div>
   </section>
 
-</main>
+  <div id="plantModal" class="plant-modal">
+    <div class="plant-modal-content">
+      <span class="plant-close" onclick="closePlantModal()">&times;</span>
+      <div class="plant-modal-left">
+        <img src="apfelbaum.jpg" alt="Apfelbaum" class="plant-main-image">
 
-  <div id="plantModal" class="modal">
-    <div class="modal-content">
-      <span class="close" onclick="closePlantModal()">&times;</span>
+        <div class="plant-thumbs">
+          <img src="apfelbaum.jpg" alt="Apfelbaum">
+          <img src="apfelblüte.jpg" alt="Apfelblüte">
+          <img src="apfel.jpg" alt="Apfel">
+        </div>
+      </div>
 
-      <img src="apfelbaum.jpg" alt="Apfelbaum">
+      <div class="plant-modal-right">
+        <h2>Apfelbaum</h2>
+        <p class="latin-name">Malus domestica</p>
 
-      <h2>🍎 Apfelbaum</h2>
-      <p><em>Malus domestica</em></p>
-
-      <p><strong>Kategorie:</strong> Obst</p>
-      <p><strong>Jahreszeit:</strong> Herbst</p>
-      <p><strong>Standort:</strong> Sonnig bis halbschattig</p>
-      <p><strong>Pflanzzeit:</strong> Herbst oder Frühjahr</p>
-      <p><strong>Pflege:</strong> Regelmäßig schneiden</p>
-      <p><strong>Ernte:</strong> August bis Oktober</p>
-      <p><strong>Verwendung:</strong> Apfelmus, Kuchen, Saft</p>
+        <p><strong>Kateogrie:</strong>Obst</p>
+        <p><strong>Jahreszeit:</strong>Herbst</p>
+        <p><strong>Standort:</strong>Sonnig bis halbschattig</p>
+        <p><strong>Pflanzzeit:</strong>Herbst oder Frühjahr</p>
+        <p><strong>Pflege:</strong>Regelmäßig schneiden und bei Trockenheit gießen</p>
+        <p><strong>Ernte:</strong>August bis Oktober</p>
+        <p><strong>Verwendung:</strong>Apfelmus, Kuchen, Saft oder Kompott</p>
+      </div>
     </div>
   </div>
-
 <footer class="footer">
   <div class="footer-content">
     <p><strong>Gartensparte Obersprucke e. V.</strong></p>
