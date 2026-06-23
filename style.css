@@ -459,3 +459,23 @@ body {
   background-color: #2f6b3f;
   transform: translateY(-2px);
 }
+
+.plant-card {
+  background: white;
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.18);
+  cursor: pointer;
+  text-align: center;
+}
+
+.plant-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.plant-card h3 {
+  color: #2f6b3f;
+}
