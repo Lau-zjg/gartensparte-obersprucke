@@ -74,3 +74,13 @@ function openPlantModal(titel, bild, latein, kategorie, jahreszeit, standort, pf
 
   document.getElementById("plantModal").style.display = "block";
 }
+
+function closePlantModal() {
+  document.getElementById("plantModal").style.display = "none"
+}
+
+document.addEventListener("keydown", function(event) {
+  if (event.key === "Escape") {
+    closePlantModal();
+  }
+});
