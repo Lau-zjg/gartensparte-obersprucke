@@ -60,27 +60,10 @@ window.addEventListener("click", function(event) {
   }
 });
 
-function openPlantModal(titel, bild, latein, kategorie, jahreszeit, standort, pflanzzeit, pflege, ernte, verwendung) {
-  document.getElementById("plantTitle").innerText = titel;
-  document.getElementById("plantImage").src = bild;
-  document.getElementById("plantLatin").innerText = latein;
-  document.getElementById("plantCategory").innerText = kategorie;
-  document.getElementById("plantSeason").innerText = jahreszeit;
-  document.getElementById("plantLocation").innerText = standort;
-  document.getElementById("plantTime").innerText = pflanzzeit;
-  document.getElementById("plantCare").innerText = pflege;
-  document.getElementById("plantHarvest").innerText = ernte;
-  document.getElementById("plantUse").innerText = verwendung;
-
+function openPlantModal() {
   document.getElementById("plantModal").style.display = "block";
 }
 
 function closePlantModal() {
-  document.getElementById("plantModal").style.display = "none"
+  document.getElementById("plantModal").style.display = "none";
 }
-
-document.addEventListener("keydown", function(event) {
-  if (event.key === "Escape") {
-    closePlantModal();
-  }
-});

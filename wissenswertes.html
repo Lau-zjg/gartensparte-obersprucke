@@ -56,79 +56,35 @@
     </div>
   </section>
 
-    <section class="garden-grid">
+  <section class="plant-grid">
+    <div class="plant-card" onclick="openPlantModal()">
+      <img src="apfelbaum.jpg" alt="Apfelbaum">
 
-          <div class="plant-card" onclick="openPlantModal(
-                '🍎 Apfelbaum',
-                'apfelbaum.jpg',
-                'Malus domestica',
-                'Obst',
-                'Herbst',
-                'Sonnig bis halbschattig',
-                'Herbst oder Frühjahr',
-                'Regelmäßig schneiden',
-                'August bis Oktober',
-                'Apfelmus, Kuchen, Saft'
-                )">
-
-            <img src="apfelbaum.jpg" alt="Apfelbaum">
-
-            <h3>🍎 Apfelbaum</h3>
-
-            <p>Sonne/Halbschatten · Ernte im Herbst</p>
-
-          </div>
-
-        <div class="polaroid-card">
-            <h3>Erdbeeren</h3>
-            <p>Sonniger Standort</p>
-        </div>
-
-        <div class="polaroid-card">
-            <h3>Tomaten</h3>
-            <p>Viel Sonne</p>
-        </div>
-
-        <div class="polaroid-card">
-            <h3>Gurken</h3>
-            <p>Warm und feucht</p>
-        </div>
-
-        <div class="polaroid-card">
-            <h3>Kartoffeln</h3>
-            <p>Sonniger Standort</p>
-        </div>
-
-        <div class="polaroid-card">
-            <h3>Lavendel</h3>
-            <p>Sonnig und trocken</p>
-        </div>
-
-    </section>
+      <h3>🍎 Apfelbaum</h3>
+      <p>Sonne/Halbschatten · Ernte im Herbst</p>
+    </div>
+  </section>
 
 </main>
-</div>
 
-<div id="plantModal" class="modal">
-  <div class="modal-content">
+  <div id="plantModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closePlantModal()">&times;</span>
 
-    <span class="close" onclick="closePlantModal ()">&times;</span>
+      <img src="apfelbaum.jpg" alt="Apfelbaum">
 
-    <img id="apfelbaum.jpg" src="" alt="Apfelbaum">
+      <h2>🍎 Apfelbaum</h2>
+      <p><em>Malus domestica</em></p>
 
-    <h2 id="Apfelbaum"></h2>
-
-    <p><strong>Malus domestica</strong></p>
-
-    <p><strong>Kategorie:</strong> <span id="plantCategory"></span></p>
-    <p><strong>Jahreszeit:</strong> <span id="plantSeason"></span></p>
-    <p><strong>Standort:</strong> <span id="plantLocation"></span></p>
-    <p><strong>Pflanzzeit:</strong> <span id="plantTime"></span></p>
-    <p><strong>Pflege:</strong> <span id="plantCare"></span></p>
-    <p><strong>Ernte:</strong> <span id="plantHarvest"></span></p>
-    <p><strong>Verwendung:</strong> <span id="plantUse"></span></p>
+      <p><strong>Kategorie:</strong> Obst</p>
+      <p><strong>Jahreszeit:</strong> Herbst</p>
+      <p><strong>Standort:</strong> Sonnig bis halbschattig</p>
+      <p><strong>Pflanzzeit:</strong> Herbst oder Frühjahr</p>
+      <p><strong>Pflege:</strong> Regelmäßig schneiden</p>
+      <p><strong>Ernte:</strong> August bis Oktober</p>
+      <p><strong>Verwendung:</strong> Apfelmus, Kuchen, Saft</p>
+    </div>
   </div>
-</div>
 
 <footer class="footer">
   <div class="footer-content">
@@ -138,5 +94,6 @@
   </div>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
