@@ -66,16 +66,14 @@ body {
 }
 
 .slideshow {
-  height: 350px;
+  height: 500px;
   background: #dbeed2;
 }
 
 .slide {
-  display: none;
   width: 100%;
-  height: 450px;
+  height: 500px;
   object-fit: contain;
-  background: #dbeed2;
 }
 
 .slide.active {
