@@ -75,3 +75,22 @@ function openPlantModal() {
 function closePlantModal() {
   document.getElementById("plantModal").style.display = "none";
 }
+
+function openHintModal(title, items) {
+  document.getElementById("hintTitle").innerText = title;
+
+  const list = document.getElementById("hintList");
+  list.innerHTML = "";
+
+  items.forEach(function(item) {
+    const li = document.createElement("li");
+    li.innerText = item;
+    list.appendChild(li);
+  });
+
+  document.getElementById("hintModal").style.display = "block";
+}
+
+function closeHintModal() {
+  document.getElementById("hintModal").style.display = "none";
+}

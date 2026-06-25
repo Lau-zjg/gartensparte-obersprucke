@@ -391,6 +391,10 @@ body {
   .filter-buttons {
     justify-content: center;
   }
+
+  .hint-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .search-filter-box {
@@ -566,4 +570,34 @@ body {
 .latin-name {
   font-style: italic;
   color: #555;
+}
+
+.hint-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+  margin-top: 25px;
+}
+
+.hint-card {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  border-left: 6px solid #2f6b3f;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.hint-card:hover {
+  transform: translateY(-3px);
+}
+
+.hint-card h3 {
+  margin-top: 0;
+  color: #2f6b3f;
+}
+
+#hintList {
+  line-height: 1.7;
 }
