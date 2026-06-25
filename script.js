@@ -94,3 +94,16 @@ function openHintModal(title, items) {
 function closeHintModal() {
   document.getElementById("hintModal").style.display = "none";
 }
+
+function openNoticeModal(title, icon, text, date, signature) {
+  document.getElementById("noticeTitle").innerText = icon + " " + title;
+  document.getElementById("noticeText").innerText = text;
+  document.getElementById("noticeDate").innerText = date;
+  document.getElementById("noticeSignature").innerText = signature;
+
+  document.getElementById("noticeModal").style.display = "block";
+}
+
+function closeNoticeModal() {
+  document.getElementById("noticeModal").style.display = "none";
+}

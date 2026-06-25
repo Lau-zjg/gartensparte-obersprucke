@@ -601,3 +601,87 @@ body {
 #hintList {
   line-height: 1.7;
 }
+
+.notice-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+  margin-top: 25px;
+}
+
+.notice-card {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  border-left: 6px solid #2f6b3f;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.notice-card:hover {
+  transform: translateY(-3px);
+}
+
+.notice-card h3 {
+  color: #2f6b3f;
+  margin-top: 0;
+}
+
+.notice-card button {
+  background: #2f6b3f;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.notice-paper {
+  background: #fffdf2;
+  width: 80%;
+  max-width: 600px;
+  margin: 6% auto;
+  padding: 45px 35px 35px;
+  border-radius: 6px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.35);
+  position: relative;
+  text-align: center;
+  line-height: 1.7;
+}
+
+.pin {
+  position: absolute;
+  top: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #2f6b3f;
+  font-size: 34px;
+}
+
+.notice-paper h2 {
+  color: #2f6b3f;
+  margin-top: 15px;
+}
+
+.notice-date {
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+.notice-signature {
+  margin-top: 30px;
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .notice-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .notice-paper {
+    width: 85%;
+    margin-top: 20%;
+  }
+}
